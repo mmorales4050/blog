@@ -1,0 +1,12 @@
+<h2>Edit Your Account</h2>
+
+<form action="/users/<%= @user.id %>" method="POST">
+    <input type="hidden" value="PATCH" name="_method">
+    <input type="text" name="name" value="<%= @user.name %>">
+    <input type="submit" value="Submit">
+</form>
+
+<form action="/users/<%= @user.id %>" method="POST">
+    <input type="hidden" value="DELETE" name="_method">
+    <input type="submit" value="Delete Your Account">
+</form>
